@@ -1,0 +1,4 @@
+#!/bin/sh
+REIA_HOME=AGNER_INSTALL_PREFIX/reia
+export REIA_HOME
+erl -pz AGNER_INSTALL_PREFIX/reia/ebin -noshell -noinput +K true -s ire init -extra $*
